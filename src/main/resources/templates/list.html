@@ -9,7 +9,7 @@
 <a href="/add">Add an actor</a>
     <div th:each="actor : ${actors}">
         <div th:if="${actor.headshot} != null">
-            <img th:scr="${actor.headshot}" />
+            <img th:src="${actor.headshot}" />
             <hr />
         </div>
         <h3 th:text="${actor.name}"></h3>
